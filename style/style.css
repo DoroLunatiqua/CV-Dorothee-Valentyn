@@ -1,0 +1,126 @@
+html, body, main{
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1, h2 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 600;
+    font-style: normal;
+}
+li{
+    
+
+        font-family: "Imperial Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+
+}
+
+/* Page Centrale */
+#accueil{
+    
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(217, 255, 206);
+    /* couleur a garder */
+}
+
+/* Page de gauche */
+#projets{
+    background-color: rgb(205, 252, 192);
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    }
+
+/* Page de droite */
+#compétences{
+    position: absolute;
+    top: 0;
+    left: 100vw;
+    background-color: rgb(226, 253, 219);;
+    /* couleur de la fleur : #f3df9c; */
+    width: 100vw;
+    height: 100vh;
+    }
+
+/* Page du bas */
+#parcours{
+    position: absolute;
+    left : 0;
+    top : 100vh;
+    overflow: auto;
+    background-color: #f0ded0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+/* Page du Haut */
+#contact{
+    position: absolute;
+    left: 0;
+    top: -100vh;
+    background-color:rgb(189, 196, 221);
+    width: 100vw;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+.movable{
+    transition: transform 1s linear;
+}
+.sunflower{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+.petal{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width: 150px;
+    height:60px;
+    background-color: rgb(187, 187, 92);
+    border-radius:  50% 75% 75% 50% ;
+    transform-origin: bottom center;
+
+}
+
+#petal1 {
+    transform: rotate (90deg);
+background-color: blue; }
+
+#petal2 {
+    transform: rotate (22.5deg);
+background-color: blueviolet; }
+
+#petal3 {
+    transform: rotate (45deg);
+background-color: aqua; }
+#petal4 {
+    transform:  rotate (67.5deg);
+background-color: pink; }
+
+
