@@ -9,14 +9,24 @@ h1, h2 {
     font-weight: 600;
     font-style: normal;
 }
-li{
-    
 
+
+li{
+
+        
         font-family: "Imperial Script", cursive;
         font-weight: 400;
         font-style: normal;
+        list-style-type: none;
+} 
+ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+} 
 
-}
+
+
 
 /* Page Centrale */
 #accueil{
@@ -24,13 +34,32 @@ li{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    position: absolute;
     top: 0;
     left: 0;
     background-color: rgb(217, 255, 206);
     /* couleur a garder */
+    display: flex;
 }
 
+#containeraccueil{
+    display: flex;
+}
+#nom{
+    position:relative;
+    top:40%;
+    left: 50%;
+    color: #538a78;
+}
+#wad{
+    position:relative;
+    right: -60%;
+}
+#fleuraccueil{
+    width: 50%;
+    justify-content: center;
+    top:50%;
+    left: 50%;
+}
 /* Page de gauche */
 #projets{
     background-color: rgb(205, 252, 192);
@@ -71,56 +100,16 @@ li{
     top: -100vh;
     background-color:rgb(189, 196, 221);
     width: 100vw;
-    width: 100vw;
     height: 100vh;
+    
 }
 
-
+#abeillecontact{
+    max-width: 30%;
+    height: auto;
+}
 
 
 .movable{
     transition: transform 1s linear;
 }
-.sunflower{
-    position: relative;
-    width: 200px;
-    height: 200px;
-}
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    transform: translate(-50%, -50%);
-}
-.petal{
-    position: absolute;
-    top: 50%;
-    left:50%;
-    width: 150px;
-    height:60px;
-    background-color: rgb(187, 187, 92);
-    border-radius:  50% 75% 75% 50% ;
-    transform-origin: bottom center;
-
-}
-
-#petal1 {
-    transform: rotate (90deg);
-background-color: blue; }
-
-#petal2 {
-    transform: rotate (22.5deg);
-background-color: blueviolet; }
-
-#petal3 {
-    transform: rotate (45deg);
-background-color: aqua; }
-#petal4 {
-    transform:  rotate (67.5deg);
-background-color: pink; }
-
-
