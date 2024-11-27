@@ -272,7 +272,7 @@ a{
 
 
 
-/* Page du bas */
+/* Page du bas : Parcours */
 #parcours {
     position: absolute;
     left: 0;
@@ -361,13 +361,65 @@ a{
     opacity: 1;
 }
 
+/* presentation */
+.presentation-container {
+    position: relative;
+    width: 50%; /* Largeur de la présentation, ajustable */
+    right: 30%;
+    bottom:50%;
+    max-width: 600px;
+    height: auto; /* Permet d'adapter la hauteur en fonction du contenu */
+}
+
+
+.presentation {
+    padding: 20px;
+    background-color: #c2aaaa;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    z-index: 0; 
+}
+
+
+.papillon-container {
+    position: absolute; /* Positionne le papillon autour de la présentation */
+    width: 50%; /* Largeur de l'orbite */
+    height: 300px; /* Hauteur de l'orbite */
+    top: 50%; /* Centre verticalement autour de la présentation */
+    right: 30%; /* Centre horizontalement autour de la présentation */
+    transform: translate(-50%, -50%); /* Centre le cercle d'orbite */
+    pointer-events: none; /* Le papillon ne bloque pas les clics sur le texte */
+    z-index: 1; 
+}
+
+
+.papillon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0; /* Départ en haut de l'orbite */
+    left: 50%; /* Centre horizontalement */
+    transform: translateX(-50%);
+    animation: rotation 10s infinite linear; /* Le papillon tourne autour */
+}
+
+/* Animation pour faire tourner le papillon autour de la div */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg) translateX(200px) rotate(0deg); /* Début du tour */
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(-360deg); /* Fin du tour complet */
+    }
+}
 
 /* Page du Haut */
 #contact{
     position: absolute;
     left: 0;
     top: -100vh;
-
     background-color:rgb(189, 196, 221);
     width: 100vw;
     height: 100vh;
