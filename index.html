@@ -14,119 +14,159 @@
 <div class="movable">
                 
 
-<!--  Page d'accueil : Page Centrale -->
+    <!--  Page d'accueil : Page Centrale -->
 
     <div id="accueil">
-        <div id="containeraccueil">
-        <h1 id="nom"> Dorothée Valentyn </h1>
-        <h1 id="wad"> Web Application Developer Junior </h1>
-        <img src="./images/fleur-removebg-preview.png" alt="fleuraccueil" id="fleuraccueil">
+        <div id="fleur-container">
+            <!-- Fleur -->
+            <img src="./images/fleur.png" alt="fleuraccueil" id="fleuraccueil">
+            
+            <!-- Nom et Titre -->
+            <h1 id="nom">Dorothée Valentyn</h1>
+            <h2 id="wad">Web Application Developer Junior</h2>
+            
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li class="btn_contact zone haut">Contact</li>
+                    <li class="btn_competences zone droite">Compétences</li>
+                    <li class="btn_projets zone gauche">Projets</li>
+                    <li class="btn_parcours zone bas">Parcours</li>
+                </ul>
+            </nav>
         </div>
+    </div>
+
+
+
+    <!-- Page de Parcours : Page du Bas -->
+
+    <div id="parcours">
+        <h1>Parcours</h1>
+        <div id="tige">
+            <div class="feuille gauche">
+                <h2>Formation Web Application Developer</h2>
+                <h3>Interface 3</h3>
+                <h3>2024-2025</h3>
+            </div>
+            <div class="feuille droite" >
+                <h2>Puéricultrice</h2>
+                <h3>C.P.A.S d'Ittre</h3>
+                <h3>2022-2024</h3>
+            </div>
+            <div class="feuille gauche">
+                <h2>Child Care Assistant</h2>
+                <h3>Aspria Royal La Rasante</h3>
+                <h3>2005-2021</h3>
+            </div>
+            <div class="feuille droite">
+                <h2>Puéricultrice</h2>
+                <h3>Maison d'enfant "Pré en bulle"</h3>
+                <h3>2003-2004</h3>
+            </div>
+        </div>
+
+    <nav>
+        <ul>
+            <li class=" btn_accueil"> Accueil </li>
+            <li class=" btn_contact"> Contact </li>
+            <li class="btn_projets"> Projets </li>
+            <li class="btn_competences"> Compétences </li>
+
+        </ul>
+    </nav>
+
+    </div>
+
+    <!-- Page de projets : Page de gauche  -->
+    <div id="projets">
+        <h1> Projets et Liens </h1>
+
+        <div class="ruche">
+            <img src="./images/rucheressai.png" alt="dessinruche" class="ruche">
+        </div>
+        <div >
+            <img src="./images/abeille.png" alt="petite abeille" class="abeilleprojet">
+        </div>
+        <div class="alveolecontainer">
+            
+           
+            <div class="alveole"><a href="http://wad03.interface3.be/">Projet PHP Symfony</a></div>
+            <div class="alveole"><a href="https://github.com/DoroLunatiqua/" >GitHub</a></div>
+            <div class="alveole">Hackathon</div>
+            <div class="alveole"></div>
+            <div class="alveole"></div>
+        </div>
+        
         <nav>
             <ul>
-                <li class=" btn_parcours"> Parcours </li>
+                <li class=" btn_accueil"> Accueil </li>
                 <li class=" btn_contact"> Contact </li>
+                <li class=" btn_parcours"> Parcours </li>
+                <li class=" btn_competences"> Compétences </li>
+
+            </ul>
+        </nav>
+    </div>
+    <!-- Page de compétences : Page de droite  -->
+    <div id="compétences">
+        <h1> Compétences </h1>
+        
+        
+        <div class="compétencescontainer">
+            <div> HTML
+                <div><img src="./images/fleursCompetence/nature (1).png" alt="fleur1" class="fleur"></div>
+            </div>
+            <div> CSS
+                <div><img src="./images/fleursCompetence/nature (2).png" alt="fleur2" class="fleur"></div>
+            </div>
+            <div> C# 
+                <div><img src="./images/fleursCompetence/nature (3).png" alt="fleur3" class="fleur"></div>
+            </div>
+            <div> Php
+                <div><img src="./images/fleursCompetence/nature (4).png" alt="fleur4" class="fleur"></div>
+            </div>
+            <div> XML 
+                <div><img src="./images/fleursCompetence/nature (5).png" alt="fleur5" class="fleur"></div>
+            </div>
+            <div> Github
+                <div><img src="./images/fleursCompetence/nature (6).png" alt="fleur6" class="fleur"></div>
+            </div>
+            <div> .Net 
+                <div><img src="./images/fleursCompetence/nature (7).png" alt="fleur7" class="fleur"></div>
+            </div>
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li class=" btn_accueil"> Accueil </li>
+                <li class=" btn_contact"> Contact </li>
+                <li class="btn_parcours"> Parcours </li>
                 <li class="btn_projets"> Projets </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page de contact : Page du haut  -->
+    <div id="contact">
+        <h1> Contact </h1>
+        <img src="./images/fleursenveloppe.png" alt="fleur enveloppe" id="fleursenveloppe">
+        <a href="mailto:d.valentyn@interface3.be"> Contactez-moi : mail </a>
+        <h3> 0475/96.92.44 </h3>
+        <a href="">Linkedln</a>
+        <nav>
+            <ul>
+                <li class=" btn_accueil"> Accueil </li>
+                <li class=" btn_projets"> Projets </li>
+                <li class="btn_parcours"> Parcours </li>
                 <li class="btn_competences"> Compétences </li>
 
             </ul>
         </nav>
     </div>
 
-<!-- Page de Parcours : Page du Bas -->
-
-<div id="parcours">
-
-    <h1 > Parcours </h1>
-
-    <h2> Formation Web Application Developer </h2>
-    <h3> Interface 3 </h3>
-    <h3> 2024-2025 </h3>
-
-    <h2> Puéricultrice </h2>
-    <h3> C.P.A.S d'Ittre </h3>
-    <h3> 2022-2024 </h3>
-
-    <h2> Child Care Assistant </h2>
-    <h3> Aspria Royal La Rasante </h3>
-    <h3> 2005 - 2021 </h3>
-
-    <h2> Puéricultrice </h2>
-    <h3> Maison d'enfant "Pré en bulle" </h3>
-    <h3> 2003 - 2004 </h3>
-    
-    <nav>
-        <ul>
-            <li class=" btn_accueil"> Accueil </li>
-            <li class=" btn_contact"> Contact </li>
-            <li class="btn_projets"> Projets </li>
-            <li class="btn_competences"> Compétences </li>
-
-        </ul>
-    </nav>
-
-</div>
-
-    <!-- Page de projets : Page de gauche  -->
-<div id="projets">
-    <h1> Projets - Liens </h1>
-    <a href="http://wad03.interface3.be/">Projet Php</a>
-    <a href="https://github.com/DoroLunatiqua/">Lien Github</a>
-    <a href="">Hackathon</a>
-
-    <nav>
-        <ul>
-            <li class=" btn_accueil"> Accueil </li>
-            <li class=" btn_contact"> Contact </li>
-            <li class=" btn_parcours"> Parcours </li>
-            <li class=" btn_competences"> Compétences </li>
-
-        </ul>
-    </nav>
-</div>
-
-<!-- Page de compétences : Page de droite  -->
-<div id="compétences">
-    <h1> Compétences </h1>
-    <ul>
-        <li> HTML</li>
-        <li> CSS</li>
-        <li> C# </li>
-        <li> Php</li>
-        <li> XML </li>
-        <li> Github</li>
-        <li> .Net </li>
-    </ul>
-    
-
-    <nav>
-        <ul>
-            <li class=" btn_accueil"> Accueil </li>
-            <li class=" btn_contact"> Contact </li>
-            <li class="btn_parcours"> Parcours </li>
-            <li class="btn_projets"> Projets </li>
-
-        </ul>
-    </nav>
-</div>
-
-<!-- Page de contact : Page du haut  -->
-<div id="contact">
-    <h1> Contact </h1>
-    <img src="./images/abeillecontact.png" alt="abeillecontact" id="abeillecontact">
-    <a href="mailto:d.valentyn@interface3.be"> Contactez-moi : mail </a>
-    <h3> 0475/96.92.44 </h3>
-    <a href="">Linkedln</a>
-    <nav>
-        <ul>
-            <li class=" btn_accueil"> Accueil </li>
-            <li class=" btn_projets"> Projets </li>
-            <li class="btn_parcours"> Parcours </li>
-            <li class="btn_competences"> Compétences </li>
-
-        </ul>
-    </nav>
-</div>
 
 </div>
 </main>

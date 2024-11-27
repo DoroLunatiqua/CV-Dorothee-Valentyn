@@ -4,12 +4,28 @@ html, body, main{
     overflow: hidden;
 }
 
-h1, h2 {
+ h1 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 3rem;
     font-family: "Alex Brush", cursive;
-    font-weight: 600;
-    font-style: normal;
-}
+    color: #538a78;
 
+} 
+
+ul{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    
+    
+    width: 100%; /* Étend le menu sur toute la largeur */
+    padding: 0 5px; /* Ajoute un peu d'espace intérieur */
+    
+    
+} 
 
 li{
 
@@ -18,98 +34,338 @@ li{
         font-weight: 400;
         font-style: normal;
         list-style-type: none;
-} 
-ul{
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+        padding: 1em;
 } 
 
 
 
 
-/* Page Centrale */
-#accueil{
-    
-    position: absolute;
+/* Page d'accueil */
+#accueil {
+    left: 0 ;
+    top:0 ;
+
+    position: absolute ;
     width: 100vw;
     height: 100vh;
-    top: 0;
-    left: 0;
+
     background-color: rgb(217, 255, 206);
-    /* couleur a garder */
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* Fleur */
+
+#fleur-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#containeraccueil{
-    display: flex;
-}
-#nom{
-    position:relative;
-    top:40%;
-    left: 50%;
-    color: #538a78;
-}
-#wad{
-    position:relative;
-    right: -60%;
-}
 #fleuraccueil{
     width: 50%;
-    justify-content: center;
-    top:50%;
-    left: 50%;
+    height: 50%;
+    
+    
 }
-/* Page de gauche */
+
+#contactaccueil {
+
+    opacity: 0;
+}
+#competencesaccueil {
+
+    opacity: 0;
+}
+
+#projetsaccueil {
+
+    opacity: 0;
+}
+#parcoursaccueil{
+
+    opacity: 0;
+} 
+#contactaccueil:hover {
+    opacity: 1; 
+}
+#competencesaccueil:hover{
+    opacity: 1;
+}
+#projetsaccueil:hover{
+    opacity: 1;
+}
+#parcoursaccueil:hover{
+    opacity: 1;
+} 
+
+/* Nom et Titre */
+#nom {
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:3vw;
+   
+    font-family: "Alex Brush", cursive;
+    color: #538a78;
+    text-align: center;
+    width: 10%;
+}
+
+#wad {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 2rem;
+    font-family: "Alex Brush", cursive;
+    color: #538a78;
+}
+
+/* Page de gauche Ruche et projet */
 #projets{
-    background-color: rgb(205, 252, 192);
+    background-color: rgb(221, 231, 218);
     position: absolute;
     top: 0;
     left: -100vw;
+
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Permet de centrer tout le contenu, y compris les alvéoles */
+}
+
+/*image de la ruche*/
+   .ruche{
+    position: relative;
+    right: 25%;
+
+   }
+
+
+   /* Ajustement pour bien centrer les alvéoles */
+   .alveolecontainer {
+    position: relative;
+    left: 20%;
+   bottom:20%;
+       display: grid;
+       
+       grid-template-columns: repeat(3, 100px);  /* 3 colonnes pour la ligne du bas */
+       grid-template-rows: auto;                  /* Lignes de hauteur automatique */
+       justify-items: center;                     /* Centre les éléments horizontalement */
+       grid-gap: 10px;                            /* Espacement entre les alvéoles */
+   }
+       
+/* Style des alvéoles */
+.alveole {
+    width: 115px;                 /* Largeur fixe des alvéoles */
+    height: 100px;                /* Hauteur fixe des alvéoles */
+    background-color: rgb(207, 197, 128);  /* Couleur des alvéoles */
+    clip-path: polygon(50% 0%, 90% 25%, 90% 75%, 50% 100%, 10% 75%, 10% 25%);  /* Forme hexagonale */
+    text-align: center;           /* Centre le texte à l'intérieur des alvéoles */
+    line-height: 100px;           /* Centre verticalement le texte */
+    box-sizing: border-box;       /* Prend en compte les bordures et padding dans les dimensions */
+}
+
+a{
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
     }
+    
+    .abeilleprojet{
+        position: absolute;
+        top: 10%;
+        width: 8%;
+        height: auto;
+    }
+    
 
 /* Page de droite */
 #compétences{
     position: absolute;
     top: 0;
     left: 100vw;
-    background-color: rgb(226, 253, 219);;
-    /* couleur de la fleur : #f3df9c; */
+
+    background-color: rgb(226, 253, 219);
     width: 100vw;
     height: 100vh;
+  
     }
 
-/* Page du bas */
-#parcours{
+/* Conteneur des compétences */
+.compétencescontainer {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; /* Centrer les éléments horizontalement */
+    align-items: flex-end; /* Les positionner en bas */
     position: absolute;
-    left : 0;
-    top : 100vh;
-    overflow: auto;
+    bottom: 0; /* Les fleurs commencent en bas */
+    width: 100%; /* Occupe toute la largeur */
+    height: 100%; /* Pour l'effet de croissance */
+    font-family: "Imperial Script", cursive;
+    color: #538a78;
+    font-size: 15;
+}
+
+/* Initialement aplatie, sans transition */
+.fleur {
+    width: 50%;
+    height: auto;
+    transform: scaleY(0.5); /* Fleur aplatie au départ */
+    transform-origin: bottom; /* Pousse depuis la base */
+    
+}
+
+/* Classe ajoutée pour déclencher l'effet */
+.fleur.poussee {
+    transform: scaleY(1); /* Fleur grandit jusqu'à sa taille normale */
+    animation: pousser 5s ease-out forwards; 
+}
+
+/* Animation : pousser les fleurs */
+@keyframes pousser {
+    0% {
+        transform: scaleY(0); /* Commence aplatie */
+    }
+    100% {
+        transform: scaleY(1); /* Finit avec sa taille normale */
+    }
+}
+
+
+/* Optionnel : Ajout d'un léger décalage pour chaque fleur */
+.compétencescontainer div:nth-child(odd) .fleur {
+    animation-delay: 0.5s; /* Décalage pour les fleurs impaires */
+}
+.compétencescontainer div:nth-child(even) .fleur {
+    animation-delay: 1s; /* Décalage pour les fleurs paires */
+}
+
+
+
+/* Page du bas */
+#parcours {
+    position: absolute;
+    left: 0;
+    top: 100vh;
+
     background-color: #f0ded0;
     width: 100vw;
     height: 100vh;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
 }
+
+#tige {
+    position: relative;
+    width: 10px;
+    height: 80%;
+    background-color: rgb(67, 110, 67);
+    margin: auto;
+}
+
+.feuille {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+} 
+
+
+.feuille.gauche {
+    left: -170px;
+    background-image: url("../images/feuilleG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius : 50px;
+    border-bottom-right-radius : 20px;
+    border-top-left-radius : 20px;
+    border-top-right-radius : 50px;
+}
+
+.feuille.droite {
+    background-image: url("../images/feuille.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 20px;
+    border-bottom-left-radius : 20px;
+  border-bottom-right-radius : 50px;
+  border-top-left-radius : 50px;
+  border-top-right-radius : 20px;
+}
+
+.feuille:nth-child(1) {
+    top: 5%;
+}
+
+.feuille:nth-child(2) {
+    top: 30%;
+}
+
+.feuille:nth-child(3) {
+    top: 55%;
+}
+
+.feuille:nth-child(4) {
+    top: 80%;
+}
+
+.feuille:hover {
+    transform: scale(1.1);
+    background-color: #85c085;
+}
+.detailsparcours{
+    opacity: 0;
+}
+.detailsparcours:hover {
+    opacity: 1;
+}
+
 
 /* Page du Haut */
 #contact{
     position: absolute;
     left: 0;
     top: -100vh;
+
     background-color:rgb(189, 196, 221);
     width: 100vw;
     height: 100vh;
     
 }
 
-#abeillecontact{
-    max-width: 30%;
+#fleursenveloppe{
+    max-width: 50%;
     height: auto;
+    position: absolute;
+    top: 10%;
+    width: 20%;
+    height: auto; 
+    left: 20%;
+        
+    /* relative les elements se mettent plutot autour? */
+   
+    
 }
 
 
+/* NE PAS TOUCHER A CETTE LIGNE PERMET LE DEPLACEMENT SUR LE SITE DE MANIERE SOUHAITEE */
 .movable{
     transition: transform 1s linear;
 }
