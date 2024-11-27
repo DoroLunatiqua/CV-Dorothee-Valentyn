@@ -177,12 +177,36 @@ a{
         color: black;
     }
     
-    .abeilleprojet{
+    /* .abeilleprojet{
         position: absolute;
         top: 10%;
         width: 8%;
         height: auto;
-    }
+    } */
+
+    .abeilleprojet {
+        position: absolute;
+        top: 50%; /* Centrer verticalement */
+        left: -100px; /* Commence hors de l'écran à gauche */
+        width: 100px; /* Taille de l'image */
+        transform: translateY(-50%);
+        animation: deplacement 8s infinite ease-in-out;
+      }
+      
+      /* Animation de déplacement */
+      @keyframes deplacement {
+        0% {
+          left: -100px; /* Départ hors de l'écran à gauche */
+        }
+        50% {
+          left: 50%; /* Milieu de l'écran */
+          transform: translate(-50%, -50%) rotate(10deg);
+        }
+        100% {
+          left: 95%; /* Sortie par la droite */
+          transform: translateY(-50%) rotate(-10deg);
+        }
+      }
     
 
 /* Page de droite */
