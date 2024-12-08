@@ -223,22 +223,88 @@ a{
 
 /* Conteneur des compétences */
 .compétencescontainer {
+    
+    font-family: "Imperial Script", cursive;
+    color: #538a78;
+    font-size: 15;
+}
+
+
+.compétencescontainer {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.ficheintro{
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(70% - 20px);
+    padding: 10px; /*marge internet*/
+    text-align: center;
+
+}
+.fichebreak{
+    /* background: #f9f9f9; */
+    /* border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: calc(20% - 20px);
+    padding: 10px; /*marge internet*/
+    text-align: center;
+  
+}
+
+.fiche {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(20% - 20px);
+    padding: 10px; /*marge internet*/
+    text-align: center;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+
+.fiche img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.fiche h3 {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.fiche div, .fiche p {
+    font-size: 16px;
+    color: #666;
+    /* line-height: 1.5; */
+}
+
+.fleurscontainer{
+    display: flex;
+    /* flex-wrap: wrap;  */
     justify-content: center; /* Centrer les éléments horizontalement */
     align-items: flex-end; /* Les positionner en bas */
     position: absolute;
     bottom: 0; /* Les fleurs commencent en bas */
     width: 100%; /* Occupe toute la largeur */
     height: 100%; /* Pour l'effet de croissance */
-    font-family: "Imperial Script", cursive;
-    color: #538a78;
-    font-size: 15;
+
 }
 
 /* Initialement aplatie, sans transition */
 .fleur {
-    width: 50%;
+    width: 70%;
     height: auto;
     transform: scaleY(0.5); /* Fleur aplatie au départ */
     transform-origin: bottom; /* Pousse depuis la base */
