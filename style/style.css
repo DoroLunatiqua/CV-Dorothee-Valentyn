@@ -19,9 +19,7 @@ ul{
     bottom: 0;
     display: flex;
     align-items: flex-end;
-    
-    
-    width: 100%; /* Étend le menu sur toute la largeur */
+    /* width: 100%; Étend le menu sur toute la largeur */
     padding: 0 5px; /* Ajoute un peu d'espace intérieur */
     
     
@@ -29,12 +27,13 @@ ul{
 
 li{
 
-        
-        font-family: "Imperial Script", cursive;
-        font-weight: 400;
-        font-style: normal;
-        list-style-type: none;
-        padding: 1em;
+    font-family: "Imperial Script", cursive;
+    color: #538a78;
+    font-size: 15;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+    padding: 1em;
 } 
 
 
@@ -143,6 +142,7 @@ li{
    .ruche{
     position: relative;
     right: 25%;
+    bottom:-5%;
 
    }
 
@@ -333,7 +333,6 @@ a{
     position: absolute;
     left: 0;
     top: 100vh;
-
     background-color: #f0ded0;
     width: 100vw;
     height: 100vh;
@@ -341,15 +340,16 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
 }
 
 #tige {
     position: relative;
     width: 10px;
-    height: 100%;
+    min-height: 100%;
     background-color: rgb(67, 110, 67);
-    margin: auto;
+    margin: 0;
+    flex-grow: 1;
+    bottom:-5%;
 }
 
 .feuille {
@@ -391,11 +391,11 @@ a{
 }
 
 .feuille:nth-child(1) {
-    top: 5%;
+    top:  15%;
 }
 
 .feuille:nth-child(2) {
-    top: 30%;
+    top: 35%;
 }
 
 .feuille:nth-child(3) {
@@ -420,11 +420,11 @@ a{
 /* presentation */
 .presentation-container {
     position: relative;
-    width: 50%; /* Largeur de la présentation, ajustable */
+    width: 30%; /* Largeur de la présentation, ajustable */
     right: 30%;
     bottom:50%;
     max-width: 600px;
-    height: auto; /* Permet d'adapter la hauteur en fonction du contenu */
+    height: auto;
 }
 
 
