@@ -227,55 +227,56 @@ a{
     font-family: "Imperial Script", cursive;
     color: #538a78;
     font-size: 15;
-}
-
-
-.compétencescontainer {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 50px;
 }
+/* Conteneur global pour les fiches */
+.fichecontainer {
+    position: absolute; /* Permet de positionner précisément */
+    top: 40%; /* Positionner verticalement */
+    left: 10%; /* Positionner à gauche */
+    transform: translateY(-50%); /* Ajuste pour centrer exactement */
+    display: flex; /* Permet l'alignement des fiches */
+    gap: 20px; /* Espace entre les fiches */
+}
 
-.ficheintro{
-    background: #f9f9f9;
+/* Fiche d'intro */
+.ficheintro {
+    position: absolute; /* Permet le positionnement indépendant */
+    top: 50%; /* Ajuste la position verticale */
+    right: 5%; /* Place à droite */
+    transform: translateY(-50%); /* Centrer verticalement */
+    background: rgb(227, 249, 222);
     border: 2px solid #ddd;
-    border-radius: 20px;
+    border-radius: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(70% - 20px);
-    padding: 10px; /*marge internet*/
+    width: 20%; /* Largeur fixe */
+    height: auto; /* S'adapte au contenu */
+    padding: 25px;
     text-align: center;
-
-}
-.fichebreak{
-    /* background: #f9f9f9; */
-    /* border: 2px solid #ddd;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-    width: calc(20% - 20px);
-    padding: 10px; /*marge internet*/
-    text-align: center;
-  
+    font-size: x-large;
+    font-family: "Alex Brush";
+    color: #538a78;
 }
 
+/* Style des fiches individuelles */
 .fiche {
     background: #f9f9f9;
     border: 2px solid #ddd;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: calc(20% - 20px);
-    padding: 10px; /*marge internet*/
+    width: 200px; /* Taille fixe pour uniformité */
+    padding: 10px;
     text-align: center;
-    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
-
-.fiche img {
-    max-width: 100px;
+/* Centrage des éléments dans les fiches */
+.fourmi {
+    width: 100%;
     height: auto;
     margin-bottom: 15px;
-    border-radius: 50%;
-    border: 2px solid #ccc;
 }
 
 .fiche h3 {
@@ -287,7 +288,6 @@ a{
 .fiche div, .fiche p {
     font-size: 16px;
     color: #666;
-    /* line-height: 1.5; */
 }
 
 .fleurscontainer{
@@ -328,16 +328,6 @@ a{
 }
 
 
-/* Optionnel : Ajout d'un léger décalage pour chaque fleur */
-.compétencescontainer div:nth-child(odd) .fleur {
-    animation-delay: 0.5s; /* Décalage pour les fleurs impaires */
-}
-.compétencescontainer div:nth-child(even) .fleur {
-    animation-delay: 1s; /* Décalage pour les fleurs paires */
-}
-
-
-
 /* Page du bas : Parcours */
 #parcours {
     position: absolute;
@@ -357,7 +347,7 @@ a{
 #tige {
     position: relative;
     width: 10px;
-    height: 80%;
+    height: 100%;
     background-color: rgb(67, 110, 67);
     margin: auto;
 }
