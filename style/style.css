@@ -48,7 +48,7 @@ li{
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(217, 255, 206);
+    background-color:rgb(217, 255, 206);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,15 +116,15 @@ li{
 #wad {
     position: absolute;
     top: 10%;
-    right: 10%;
-    font-size: 2rem;
+    right: 5%;
+    font-size: 300%;
     font-family: "Alex Brush", cursive;
     color: #538a78;
 }
 
 /* Page de gauche Ruche et projet */
 #projets{
-    background-color: rgb(221, 231, 218);
+    background-color:rgb(221, 231, 218);
     position: absolute;
     top: 0;
     left: -100vw;
@@ -215,7 +215,7 @@ a{
     top: 0;
     left: 100vw;
 
-    background-color: rgb(226, 253, 219);
+    background-color: #d5f0e0;/*rgb(226, 253, 219);*/
     width: 100vw;
     height: 100vh;
   
@@ -299,7 +299,6 @@ a{
     bottom: 0; /* Les fleurs commencent en bas */
     width: 100%; /* Occupe toute la largeur */
     height: 100%; /* Pour l'effet de croissance */
-
 }
 
 /* Initialement aplatie, sans transition */
@@ -409,6 +408,7 @@ a{
 .feuille:hover {
     transform: scale(1.1);
     background-color: #85c085;
+    font-size:medium;
 }
 .detailsparcours{
     opacity: 0;
@@ -430,7 +430,7 @@ a{
 
 .presentation {
     padding: 20px;
-    background-color: #c2aaaa;
+    background-color:#eec5bf;
     border-radius: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
@@ -476,9 +476,56 @@ a{
     position: absolute;
     left: 0;
     top: -100vh;
-    background-color:rgb(189, 196, 221);
+    background-color: #FADADD;/*rgb(189, 196, 221);*/
     width: 100vw;
     height: 100vh;
+    text-align: center;
+    
+}
+
+
+/* Section des infos */
+#infoContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Image */
+#fleursenveloppe {
+    width: 150px; /* Taille ajustée */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+#fleursenveloppe:hover {
+    transform: scale(1.05); /* Zoom léger au survol */
+}
+
+/* Liens */
+#infoContact a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: var(--green-pastel-5); /* Vert pastel plus foncé */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+#infoContact a:hover {
+    color: var(--contrast-color); /* Corail pastel pour le contraste */
+}
+
+/* Numéro de téléphone */
+#infoContact h3 {
+    font-size: 1.5em;
+    color: var(--green-pastel-3);
+}
+
+
+
+#infoContact{
     
 }
 
@@ -500,3 +547,4 @@ a{
 .movable{
     transition: transform 1s linear;
 }
+
